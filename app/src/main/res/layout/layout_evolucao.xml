@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:backgroundTint="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtEvPac"
+            android:textStyle="normal|bold"
+            android:textColor="@color/azulPadrao"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:hint="Nome do paciente"
+            android:gravity="center_horizontal"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="290dp"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/etEvolucao"
+            android:hint="Evolução do paciente..."
+            android:layout_height="350dp"
+            android:gravity="top"
+            android:textAlignment="gravity"
+            android:textColor="@color/azulPadrao"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ev_borda"
+            android:layout_below="@+id/txtEvDataHora"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:text="ENVIAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:id="@+id/btInserir"
+            android:textColor="@color/azulPadrao"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:clickable="true"
+            android:layout_below="@+id/etEvolucao"
+            android:layout_centerHorizontal="true"
+            android:onClick="enviaDados" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtEvDataHora"
+            android:textColor="@color/verdePadrao"
+            android:textSize="12sp"
+            android:hint="Data e hora da evolução"
+            android:gravity="center_horizontal"
+            android:textAlignment="gravity"
+            android:layout_below="@+id/txtEvPac"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</ScrollView>

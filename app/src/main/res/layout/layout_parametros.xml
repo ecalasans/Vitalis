@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:backgroundTint="@android:color/white"
+    android:scrollbars="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <CheckBox
+            android:text="Aspiração?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chkAsp"
+            android:textColor="@color/azulPadrao"
+            android:layout_alignBaseline="@+id/chkFisio"
+            android:layout_alignBottom="@+id/chkFisio"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="46dp"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:text="Mudança de decúbito?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chkMud"
+            android:textColor="@color/azulPadrao"
+            android:textSize="16sp"
+            android:layout_below="@+id/chkFisio"
+            android:layout_alignLeft="@+id/chkFisio"
+            android:layout_alignStart="@+id/chkFisio"
+            android:layout_marginTop="20dp" />
+
+        <CheckBox
+            android:text="Higiene ocular?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chkHOcular"
+            android:textColor="@color/azulPadrao"
+            android:textSize="16sp"
+            android:layout_alignBaseline="@+id/chkHOral"
+            android:layout_alignBottom="@+id/chkHOral"
+            android:layout_alignRight="@+id/chkAsp"
+            android:layout_alignEnd="@+id/chkAsp" />
+
+        <TextView
+            android:text="PEEP"
+            android:layout_height="16dp"
+            android:id="@+id/textView10"
+            android:gravity="center_horizontal"
+            android:background="@color/verdePadrao"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_width="140dp"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_toEndOf="@+id/textView2"
+            android:layout_marginLeft="10dp" />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etPinsp"
+            android:textAlignment="gravity"
+            android:layout_width="90dp"
+            android:textColor="@color/azulPadrao"
+            android:textSize="30sp"
+            android:textStyle="normal|bold"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/chkHOral"
+            android:layout_alignRight="@+id/chkHOral"
+            android:layout_alignEnd="@+id/chkHOral" />
+
+        <TextView
+            android:text="PInsp"
+            android:layout_height="16dp"
+            android:id="@+id/textView2"
+            android:gravity="center_horizontal"
+            android:background="@color/verdePadrao"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_width="140dp"
+            android:layout_below="@+id/etPinsp"
+            android:layout_alignLeft="@+id/chkHOral"
+            android:layout_alignStart="@+id/chkHOral" />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etPPeep"
+            android:textAlignment="gravity"
+            android:layout_width="90dp"
+            android:textColor="@color/azulPadrao"
+            android:textSize="30sp"
+            android:textStyle="normal|bold"
+            android:gravity="center_horizontal"
+            android:layout_above="@+id/textView10"
+            android:layout_alignLeft="@+id/textView10"
+            android:layout_alignStart="@+id/textView10"
+            android:layout_marginLeft="25dp" />
+
+        <TextView
+            android:text="FR"
+            android:layout_height="16dp"
+            android:id="@+id/textView4"
+            android:gravity="center_horizontal"
+            android:background="@color/verdePadrao"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_width="140dp"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_marginLeft="10dp" />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etPFr"
+            android:textAlignment="gravity"
+            android:layout_width="90dp"
+            android:textColor="@color/azulPadrao"
+            android:textSize="30sp"
+            android:textStyle="normal|bold"
+            android:gravity="center_horizontal"
+            android:layout_above="@+id/textView4"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:text="Te"
+            android:layout_height="16dp"
+            android:id="@+id/textView14"
+            android:gravity="center_horizontal"
+            android:background="@color/verdePadrao"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_width="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/etTe"
+            android:layout_alignStart="@+id/etTe" />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/etIE"
+            android:textAlignment="gravity"
+            android:textColor="@color/azulPadrao"
+            android:textSize="30sp"
+            android:textStyle="normal|bold"
+            android:gravity="center_horizontal"
+            android:layout_width="65dp"
+            android:layout_alignBaseline="@+id/etTe"
+            android:layout_alignBottom="@+id/etTe"
+            android:layout_toRightOf="@+id/etTe"
+            android:layout_toEndOf="@+id/etTe"
+            android:layout_marginLeft="10dp"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:text="I/E"
+            android:layout_height="16dp"
+            android:id="@+id/textView15"
+            android:gravity="center_horizontal"
+            android:background="@color/verdePadrao"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_width="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/etIE"
+            android:layout_alignStart="@+id/etIE" />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/etPFluxo"
+            android:textAlignment="gravity"
+            android:textColor="@color/azulPadrao"
+            android:textSize="30sp"
+            android:textStyle="normal|bold"
+            android:gravity="center_horizontal"
+            android:layout_width="65dp"
+            android:layout_alignBaseline="@+id/etIE"
+            android:layout_alignBottom="@+id/etIE"
+            android:layout_toRightOf="@+id/etIE"
+            android:layout_toEndOf="@+id/etIE"
+            android:layout_marginLeft="10dp"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:text="Fluxo"
+            android:layout_height="16dp"
+            android:id="@+id/textView16"
+            android:gravity="center_horizontal"
+            android:background="@color/verdePadrao"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_width="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/etPFluxo"
+            android:layout_alignStart="@+id/etPFluxo" />
+
+        <TextView
+            android:text="FiO2(%)"
+            android:layout_height="16dp"
+            android:id="@+id/textView3"
+            android:gravity="center_horizontal"
+            android:background="@color/verdePadrao"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_width="140dp"
+            android:layout_below="@+id/etPFi"
+            android:layout_alignLeft="@+id/textView8"
+            android:layout_alignStart="@+id/textView8" />
+
+        <CheckBox
+            android:text="Higiene oral?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chkHOral"
+            android:textColor="@color/azulPadrao"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/chkMud"
+            android:layout_alignLeft="@+id/chkMud"
+            android:layout_alignStart="@+id/chkMud" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPPac"
+            android:textStyle="normal|bold"
+            android:textColor="@color/azulPadrao"
+            android:layout_marginTop="38dp"
+            android:hint="Nome do paciente"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPDataHora"
+            android:textColor="@color/verdePadrao"
+            android:textSize="12sp"
+            android:hint="Data e hora da evolução"
+            android:gravity="center_horizontal"
+            android:textAlignment="gravity"
+            android:layout_below="@+id/txtPPac"
+            android:layout_centerHorizontal="true" />
+
+        <CheckBox
+            android:text="Fisioterapia?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chkFisio"
+            android:textColor="@color/azulPadrao"
+            android:textSize="16sp"
+            android:layout_marginTop="29dp"
+            android:layout_below="@+id/txtPDataHora"
+            android:layout_toLeftOf="@+id/chkHOcular"
+            android:layout_toStartOf="@+id/chkHOcular"
+            android:layout_marginRight="19dp"
+            android:layout_marginEnd="19dp" />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etPFi"
+            android:textAlignment="gravity"
+            android:layout_width="90dp"
+            android:textColor="@color/azulPadrao"
+            android:textSize="30sp"
+            android:textStyle="normal|bold"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/textView2"
+            android:layout_alignRight="@+id/chkFisio"
+            android:layout_alignEnd="@+id/chkFisio" />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/etTe"
+            android:textAlignment="gravity"
+            android:textColor="@color/azulPadrao"
+            android:textSize="30sp"
+            android:textStyle="normal|bold"
+            android:gravity="center_horizontal"
+            android:layout_width="65dp"
+            android:inputType="numberDecimal"
+            android:layout_alignBaseline="@+id/etTi"
+            android:layout_alignBottom="@+id/etTi"
+            android:layout_toLeftOf="@+id/textView4"
+            android:layout_toStartOf="@+id/textView4" />
+
+        <TextView
+            android:text="Ti"
+            android:layout_height="16dp"
+            android:id="@+id/textView8"
+            android:gravity="center_horizontal"
+            android:background="@color/verdePadrao"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_width="65dp"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignParentBottom="true" />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/etTi"
+            android:textAlignment="gravity"
+            android:textColor="@color/azulPadrao"
+            android:textSize="30sp"
+            android:textStyle="normal|bold"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/textView3"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_width="65dp"
+            android:layout_alignParentBottom="false"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="25dp" />
+
+
+    </RelativeLayout>
+</ScrollView>
